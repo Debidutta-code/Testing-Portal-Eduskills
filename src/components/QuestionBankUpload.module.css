@@ -1,0 +1,162 @@
+.admin-question-bank-upload {
+    background-color: rgb(248, 249, 250);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.117);
+    min-height: 70vh; /* Use min-height for flexibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for breathing room */
+}
+
+.category-selector {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width for responsiveness */
+}
+
+.category-selector select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 300px; /* Limit width for larger screens */
+}
+
+.admin-question-option-input-field-container {
+    background-color: #ffffff;
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 500px; /* Limit width for larger screens */
+    height: 200px; /* Fixed height for the dropzone */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.admin-question-option-input-field-container.active {
+    background-color: #e9ecef;
+    border-color: #28a745;
+    animation: shake 0.5s;
+}
+
+.admin-question-option-input-field-container p {
+    color: #007bff;
+    font-size: 16px;
+}
+
+.upload-error-message,
+.upload-success-message {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 500px; /* Limit width for larger screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.upload-error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.upload-success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.upload-success-message p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.admin-add-to-question-bank-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-add-to-question-bank-button:hover {
+    background-color: #0056b3;
+}
+
+.uploaded-file-name {
+    color: rgb(23, 57, 7);
+}
+
+.file-data-table-container {
+    width: 100%;
+    max-width: 90%;
+    overflow-x: auto; /* Enable horizontal scrolling for tables */
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.file-data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.file-data-table th,
+.file-data-table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.file-data-table th {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.file-data-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.file-data-table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.demo{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(98, 98, 98);
+    padding-bottom: 30px;
+}
+
+.demo p {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(147, 147, 255);
+    transition: all 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.demo p:hover {
+    font-size: 18px;
+    color: rgb(0, 128, 207);
+}

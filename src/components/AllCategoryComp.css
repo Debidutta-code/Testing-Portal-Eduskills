@@ -1,0 +1,145 @@
+.all-category-component-main-container {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.all-category-component-main-search-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    border-radius: 20px;
+}
+
+.all-category-component-main-search-input-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.all-category-component-main-search-input-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    color: black;
+    border-radius: 50%;
+    background-color: rgba(238, 238, 238, 0.713);
+    transition: transform 0.5s;
+}
+
+/* .search-button.rotated {
+    transform: rotate(180deg);
+} */
+
+.search-input {
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 0;
+    opacity: 0;
+    outline: none;
+    transition: width 0.3s, opacity 0.3s;
+    position: absolute;
+    right: 0;
+    margin-right: 60px; /* Adjust as needed to align with the button */
+}
+
+.search-input.visible {
+    width: 400px; /* Desired width when visible */
+    opacity: 1;
+}
+
+.all-category-all-sections-list-main-container {
+    width: 100%;
+    height: calc(100% - 65px);
+    max-height: calc(100% - 65px);
+    border-radius: 10px;
+    max-width: 100%;
+    /* background-color: rgb(217, 237, 255); */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.134);
+    background-color: rgb(231, 252, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-category-all-section-list {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-top: 50px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    /* background-color: aliceblue; */
+    /* background-color: rgb(14,97,157); */
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.category-card {
+    background-color: #ffffff;
+    width: 85%;
+    height: 250px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.category-card-image-container {
+    width: 100%; /* Ensure the container takes up full width */
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+.category-card-image-container img {
+    width: 100%; /* Make sure the image fills the container */
+    height: 100%; /* Ensure the image size is responsive */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.category-card-content{
+    margin-top: 15px;
+}
+
+.category-card-content h3{
+    margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .all-category-all-section-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .all-category-all-section-list {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+
+    .search-input.visible {
+        width: 200px; /* Full width for small screens */
+        right: 0;
+    }
+}

@@ -1,0 +1,126 @@
+.admin-candidate-register-main-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.register-left-main-container {
+    flex: 1;
+    background-color: rgb(12, 97, 158);
+}
+
+.register-left-side-logo-and-name-outside-container {
+    width: 100%;
+    height: 40vh;
+}
+
+.register-left-side-logo-and-name-main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register-left-side-logo-container {
+    height: 75px;
+    object-fit: cover;
+}
+
+.register-left-side-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.register-left-side-company-name-container {
+    color: rgb(252, 241, 217);
+    font-size: 20px;
+}
+
+.register-left-side-logo-and-name-main-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.register-signup-signin-text {
+    color: rgba(252, 241, 217, 0.848);
+}
+
+.register-signup-signin-text {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    user-select: none;
+}
+
+.register-signup-signin-text span {
+    color: white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.register-left-mind-image-component-content-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.register-left-mind-image-main-container {
+    margin-bottom: 0px;
+    object-fit: cover;
+    height: 60vh;
+}
+
+.register-left-mind-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.register-right-main-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.register-right-main-form-container {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-right-main-form-content-container {
+    width: 80%;
+}
+
+@media only screen and (max-width: 970px) {
+    .admin-candidate-register-main-container{
+        flex-direction: column;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+    .register-right-main-form-container{
+        width: 80%;
+        height: 80%;
+    }
+    .register-right-main-form-content-container{
+        width: 100%;
+    }
+    .register-left-mind-image-main-container{
+        height: 50vh;
+    }
+}

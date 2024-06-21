@@ -1,0 +1,306 @@
+.admin-create-exam-main-component {
+    background-color: rgb(244, 237, 237);
+    width: 100%;
+    height: 90.5vh; /* Adjust minimum height as needed */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.admin-create-exam-page-btn-form-container {
+    width: 100%; /* Adjust max width as needed */
+    display: flex;
+    gap: 20px;
+}
+
+.admin-create-exam-back-button-container {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.admin-create-exam-back-button {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.382);
+    transition: all 0.3s;
+}
+
+.admin-create-exam-back-button:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.232);
+    transform: scale(1.04);
+}
+
+.admin-create-exam-main-form-container {
+    display: flex;
+    width: 100%;
+    height: calc(85vh - 40px);
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.131);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+}
+
+.admin-create-exam-left-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.admin-create-exam-right-section {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-create-exam-category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.admin-create-exam-category-section {
+    width: calc(100%); /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f0f0f082;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.283);
+    margin-top: 15px;
+}
+
+.admin-create-exam-action-buttons {
+    margin-top: 20px;
+}
+
+.admin-create-exam-form-section {
+    margin-bottom: 15px;
+}
+
+input[type='number'],
+select,
+input[type='checkbox'] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.admin-create-exam-create-exam-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.admin-create-exam-schedule-exam-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.admin-create-exam-create-exam-button:hover,
+.admin-create-exam-schedule-exam-button:hover {
+    background-color: #0056b3;
+}
+
+.admin-create-exam-checkbox-align {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    margin-right: -25%;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.admin-create-exam-neg-label {
+    display: flex;
+    align-items: center;
+}
+
+.admin-create-exam-neg-input {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.admin-create-exam-label-require {
+    width: 100%;
+}
+
+.admin-create-exam-additional-options {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 57px;
+}
+
+/* Adjusted button styles */
+.admin-create-exam-create-exam-button,
+.admin-create-exam-schedule-exam-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.admin-create-exam-create-exam-button:hover,
+.admin-create-exam-schedule-exam-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Adjust scaling factor as desired */
+}
+
+.admin-create-exam-date-time-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for Select Date Button */
+.admin-create-exam-choose-date-button {
+    padding: 10px 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.admin-create-exam-choose-date-button:hover {
+    background-color: #0056b3;
+}
+
+.admin-create-exam-date-picker-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for react-calendar */
+.admin-create-exam-calendar .react-calendar {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-create-exam-calendar .react-calendar__tile {
+    padding: 10px 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-weight: bold;
+    color: black;
+}
+
+.admin-create-exam-calendar .react-calendar__tile--now {
+    background: #979797;
+    color: #D9534F;
+}
+
+.admin-create-exam-calendar .react-calendar__tile--active {
+    background: #007BFF;
+    color: white;
+    border-radius: 50%;
+}
+
+.admin-create-exam-calendar .react-calendar__tile--hover {
+    background: #EAF3FF;
+    border-radius: 50%;
+}
+
+.close-btn-calender{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(178, 0, 0, 0.701);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.close-btn-calender:hover{
+    background-color: rgb(178, 0, 0);
+}
+
+.choose-date-heading{
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .admin-create-exam-page-btn-form-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .admin-create-exam-main-form-container {
+        flex-direction: column;
+        width: auto;
+        height: calc(85vh - 100px);
+    }
+
+    .admin-create-exam-main-component {
+        padding: 0;
+        width: 100%;
+    }
+
+    .admin-create-exam-left-section,
+    .admin-create-exam-right-section {
+        width: 100%; /* Full width on smaller screens */
+        padding: 0;
+    }
+
+    .admin-create-exam-category-section {
+        width: 100%;
+    }
+}

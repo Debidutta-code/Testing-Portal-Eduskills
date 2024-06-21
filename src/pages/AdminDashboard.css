@@ -1,0 +1,79 @@
+.admin-dashboard-main-component {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 65px - 25px);
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-left: 65px;
+}
+
+.admin-dashboard-main-component h1 {
+    text-align: center;
+    width: 100%;
+    color: #a3a3a3; /* Light gray for the heading text */
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    width: 80%;
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.050), rgba(0, 0, 0, 0.100)); */
+    background-color: rgba(255, 255, 255, 0.532);
+    padding: 25px;
+    border-radius: 20px;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); Slight shadow for depth */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.244);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.card-heading {
+    /* color: rgba(0, 0, 0, 0.581); Soft black for the card text */
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background: linear-gradient(to right, rgba(64, 19, 78, 0.163), rgba(0, 0, 0, 0.084)); /* Ultra-light background for the cards */
+    border: 1px solid rgba(173, 216, 230, 0); /* Transparent border initially */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.231); /* Light shadow for subtle effect */
+    text-align: center;
+    font-size: 16px;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: rgba(16, 16, 16, 0.663);
+    border-right: 1px solid rgba(255, 255, 255, 0.476);
+}
+
+
+.card:hover {
+    background-color: rgba(48, 115, 156, 0.838);
+    color: rgba(255, 252, 252, 0.803);
+    transform: scale(1.05);
+    border: 1px solid #00000038; /* Light blue border on hover */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); /* Slightly larger shadow on hover */
+    border-right: 1px solid transparent;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 60px;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}

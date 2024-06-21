@@ -1,0 +1,78 @@
+.navbar-main-component{
+    width: 100%;
+    overflow: hidden;
+    /* background-color: rgb(235, 225, 225); */
+    background-color: rgb(14,97,157);
+    max-height: 9.5vh;
+}
+
+.navbar-main-logo-image-container{
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar-main-logo-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar-profile-image-container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+    
+.navbar-profile-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar-content-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-main-searchbar-container{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-main-searchbar-container input{
+    padding: 10px;
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+    width: 90%;
+    outline: none;
+}
+
+.navbar-main-searchbar-container button{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    width: auto;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.419);
+    color: white;
+    transition: all 0.3s;
+}
+
+.navbar-main-searchbar-container button:hover{
+    background-color: rgba(0, 0, 0, 0.728);
+}

@@ -1,0 +1,102 @@
+/* Main container styles */
+.admin-single-student-add-main-component {
+    background-color: rgb(248, 249, 250);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 70vh;
+    justify-content: center;
+}
+
+/* Student field container */
+.admin-student-field {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Label for student inputs */
+.admin-upload-student {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Input field container */
+.admin-student-type-input-field {
+    flex: 4;
+    width: 95%;
+}
+
+/* Styling for input fields */
+.admin-student-type-input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Container for the 'Add Student' button */
+.admin-add-student-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+/* Styling for the 'Add Student' button */
+.admin-save-student-btn {
+    background-color: rgb(13, 103, 13);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the 'Add Student' button */
+.admin-save-student-btn:hover {
+    background-color: rgb(10, 85, 10);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .admin-student-field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-upload-student {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .admin-save-student-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .admin-single-student-add-main-component {
+        padding: 15px;
+    }
+
+    .admin-student-field {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .admin-student-type-input-field input {
+        padding: 8px;
+        
+    }
+
+    .admin-save-student-btn {
+        padding: 10px;
+    }
+}

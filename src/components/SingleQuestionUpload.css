@@ -1,0 +1,268 @@
+/* Main container styles */
+.admin-single-question-upload {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Question type and marks section */
+.admin-question-type-and-marks {
+    background-color: rgb(248,249,250);
+    display: flex;
+    padding: 20px 30px;
+    gap: 30px;
+    align-items: center;
+}
+
+.admin-upload-question {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+}
+
+.admin-choose-type-and-mark {
+    flex: 4;
+    display: flex;
+    gap: 50px;
+}
+
+.admin-choose-question-type {
+    flex: 1;
+}
+
+.admin-choose-question-mark {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.admin-choose-question-mark-label {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+}
+
+.admin-choose-question-mark-input-field {
+    flex: 1;
+}
+
+/* Question field section */
+.admin-question-field {
+    background-color: rgb(248,249,250);
+    display: flex;
+    padding: 20px 30px;
+    padding-right: 50px;
+    gap: 30px;
+    align-items: center;
+}
+
+.admin-question-type-input-field {
+    flex: 4;
+}
+
+.admin-question-quill-editor {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Options field */
+.admin-options-field {
+    background-color: rgb(255, 248, 248);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 30px;
+    align-items: center;
+}
+
+.admin-option-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.admin-option-input-field {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.option-input-field {
+    width: 100%;
+    padding: 10px 0px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.admin-correctoption-checkbox-and-lebel {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.admin-delete-option-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.admin-add-option-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-add-option-button:hover {
+    background-color: #0056b3;
+}
+
+.add-option-button-with-btn {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px 30px;
+    gap: 30px;
+}
+
+.empty-div {
+    flex: 1;
+}
+
+.add-optn-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 4;
+}
+
+.admin-save-question-btn {
+    padding: 10px 30px;
+    background-color: rgb(13,103,13);
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.admin-answer-field{
+    background-color: rgb(255, 248, 248);
+    display: flex;
+    padding: 20px 30px;
+    gap: 30px;
+    align-items: center;
+}
+
+.admin-question-type-input-field{
+    flex: 4;
+}
+
+.admin-ans-input{
+    width: 100%;
+    padding: 10px 0px;
+    padding-left: 5px;
+}
+
+.submit-btn-fill-in-blank-container-and-empty-div{
+    background-color: rgb(255, 248, 248);
+    display: flex;
+    padding: 20px 30px;
+    gap: 30px;
+    align-items: center;
+}
+
+.submit-btn-fill-in-blank{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(13, 103, 13);
+    padding: 10px 0px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.admin-category-choose-dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .admin-question-type-and-marks,
+    .admin-question-field,
+    .admin-options-field {
+        flex-direction: column;
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .admin-choose-type-and-mark,
+    .admin-option-input-field {
+        gap: 10px; /* Reduce gap between items */
+    }
+
+    .admin-add-option-button {
+        padding: 8px 16px; /* Adjust button padding */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .admin-upload-question,
+    .admin-choose-question-mark-label {
+        text-align: center; /* Center align text for smaller screens */
+    }
+
+    .admin-choose-question-type,
+    .admin-choose-question-mark {
+        flex-direction: column;
+        gap: 10px; /* Adjust gap between items */
+    }
+
+    .admin-option-input-field {
+        gap: 10px; /* Adjust gap between items */
+    }
+
+    .admin-option-container {
+        flex-direction: column; /* Stack options vertically */
+    }
+
+    .admin-choose-type-and-mark {
+        flex-direction: column;
+    }
+
+    .admin-delete-option-btn-container {
+        justify-content: flex-end; /* Move delete button to right for smaller screens */
+    }
+
+    .add-optn-btn-container {
+        flex-direction: column;
+        gap: 20px; /* Adjust gap between buttons */
+    }
+
+    .empty-div {
+        flex: 0; /* Adjust empty div flex for spacing */
+    }
+
+    .admin-save-question-btn {
+        padding: 10px 20px; /* Adjust save button padding */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    .admin-category-choose-dropdown{
+        flex-direction: column;
+    }
+}
